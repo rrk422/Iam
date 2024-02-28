@@ -1,0 +1,83 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+  background-color: #000000; //背景黒
+}
+
+
+
+/*---------------------------------------------------------------------------
+ここから下は、画面の高さが600px以下の場合の追加設定
+---------------------------------------------------------------------------*/
+@media screen and (max-height: 600px) {
+	
+	
+/*header（ロゴなどが入った最上段のブロック）
+---------------------------------------------------------------------------*/
+/*ロゴやメニューのブロック*/
+header #text {
+	padding: 20px 50px;	/*上下、左右へのブロック内の余白*/
+	margin: 0px;		/*ブロックの外にとる余白*/
+}
+
+/*ロゴ画像*/
+header #logo {
+	margin-bottom: 0;	/*下のマージンをなくす*/
+}
+
+
+
+/*３本バー（ハンバーガー）アイコン設定
+---------------------------------------------------------------------------*/
+/*開閉用のスタイル*/
+#menubar_hdr.db {display: flex;}
+#menubar_hdr.dn {display: none;}
+
+/*３本バーを囲むブロック*/
+#menubar_hdr {
+	position: fixed;z-index: 101;
+	cursor: pointer;
+	left: 20px;			/*左からの配置場所指定*/
+	top: 20px;			/*上からの配置場所指定*/
+	padding: 16px 14px;	/*上下、左右への余白*/
+	width: 46px;		/*幅（３本バーが出ている場合の幅になります）*/
+	height: 46px;		/*高さ*/
+	display: flex;					/*flexボックスを使う指定*/
+	flex-direction: column;			/*子要素（３本バー）を縦並びにする*/
+	justify-content: space-between;	/*並びかたの種類の指定*/
+	background: rgba(0,0,0,0.3);	/*背景色*/
+}
+
+/*バー１本あたりの設定*/
+#menubar_hdr span {
+	display: block;
+	transition: 0.3s;	/*アニメーションにかける時間。0.3秒。*/
+	border-top: 2px solid #fff;	/*線の幅、線種、色*/
+}
+
+/*×印が出ている状態の設定。※１本目および２本目のバーの共通設定。*/
+#menubar_hdr.ham span:nth-of-type(1),
+#menubar_hdr.ham span:nth-of-type(3) {
+	transform-origin: center center;	/*変形の起点。センターに。*/
+	width: 20px;						/*バーの幅*/
+}
+
+/*×印が出ている状態の設定。※１本目のバー。*/
+#menubar_hdr.ham span:nth-of-type(1){
+	transform: rotate(45deg) translate(3.8px, 5px);	/*回転45°と、X軸Y軸への移動距離の指定*/
+}
+
+/*×印が出ている状態の設定。※３本目のバー。*/
+#menubar_hdr.ham span:nth-of-type(3){
+	transform: rotate(-45deg) translate(3.8px, -5px);	/*回転-45°と、X軸Y軸への移動距離の指定*/
+}
+
+/*×印が出ている状態の設定。※２本目のバー。*/
+#menubar_hdr.ham span:nth-of-type(2){
+	display: none;	/*２本目は使わないので非表示にする*/
+}
+
+
+/*　※注意！　下の閉じカッコ　}　はこのブロックに必要なので、削除しないで下さい。　*/
+
+}
