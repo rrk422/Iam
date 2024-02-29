@@ -4,9 +4,9 @@ body {
   background-color: #000000; 
 }
 
-.logo {
-  text-align: center;
-}
+.logo {text-align: center;}
+
+.instgram {text-align: center;}
 
 h2 {
   /* 文字の色を#ff0000にしてください */
@@ -35,4 +35,8 @@ h4 {
   text-align: center;
 }
 
+}
+
+.instgram img{
+	width: 5%;
 }
