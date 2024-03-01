@@ -31,6 +31,7 @@ body {
 	margin-top: 40px}
 
 .banner {text-align: center;
+	 width: 30%;
 	margin-bottom:20px }
 
 
@@ -53,11 +54,12 @@ h4 {
   
 }
 
-
+/*
 @media screen and (max-width: 600px) {
 
 
 .banner img{width: 30%;}
 
 }
+*/
 
