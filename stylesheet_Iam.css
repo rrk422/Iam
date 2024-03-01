@@ -53,23 +53,18 @@ h4 {
   
 }
 
-/*
+
 @media screen and (max-width: 600px) {
 
 
 
-.logo img {
-	width: 80%;
-	text-align: center;
-}
+
+
+
+
+
+
+.banner img{width: 60%;}
 
 }
 
-
-.instgram img{
-	width: 50%;
-}
-
-
-.banner img{width: 70%;}
----------------------------------------------------------------------------*/
