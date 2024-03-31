@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+
+	font-family: "Noto Serif JP", "Hiragino Mincho Pro", "ヒラギノ明朝 Pro W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;	/*フォント種類*/
+	-webkit-text-size-adjust: none;
+	letter-spacing: 0.05em;
+	background: #000000;	/*背景色*/
+	color: #ccc;		/*全体の文字色*/
+	line-height: 2;		/*行間*/
+}
+
+
+h2{
+
+}
+
+@media screen and (max-width: 600px) {
+.me img{
+
+}
+}
